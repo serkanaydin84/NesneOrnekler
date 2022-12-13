@@ -188,6 +188,7 @@ namespace U2_GoldSoru6
             this.rbRobotik.TabStop = true;
             this.rbRobotik.Text = "Robotik Kodlama";
             this.rbRobotik.UseVisualStyleBackColor = true;
+            this.rbRobotik.CheckedChanged += new System.EventHandler(this.rbRobotik_CheckedChanged);
             // 
             // rbNesne
             // 
@@ -199,6 +200,7 @@ namespace U2_GoldSoru6
             this.rbNesne.TabStop = true;
             this.rbNesne.Text = "Nesne Tabanlı Prog.";
             this.rbNesne.UseVisualStyleBackColor = true;
+            this.rbNesne.CheckedChanged += new System.EventHandler(this.rbNesne_CheckedChanged);
             // 
             // rbTurkce
             // 
@@ -210,6 +212,7 @@ namespace U2_GoldSoru6
             this.rbTurkce.TabStop = true;
             this.rbTurkce.Text = "Türkçe";
             this.rbTurkce.UseVisualStyleBackColor = true;
+            this.rbTurkce.CheckedChanged += new System.EventHandler(this.rbTurkce_CheckedChanged);
             // 
             // rbMat
             // 
@@ -221,6 +224,7 @@ namespace U2_GoldSoru6
             this.rbMat.TabStop = true;
             this.rbMat.Text = "Matematik";
             this.rbMat.UseVisualStyleBackColor = true;
+            this.rbMat.CheckedChanged += new System.EventHandler(this.rbMat_CheckedChanged);
             // 
             // label6
             // 
