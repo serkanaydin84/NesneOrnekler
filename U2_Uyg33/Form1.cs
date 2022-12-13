@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace U2_Uyg32
+namespace U2_Uyg33
 {
     public partial class Form1 : Form
     {
@@ -17,23 +17,26 @@ namespace U2_Uyg32
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnGiris_Click(object sender, EventArgs e)
         {
+            string kulAdi;
+            long sifre;
             try
             {
-                int sayi, karesi;
-                sayi = Convert.ToInt32(textBox1.Text);
-                karesi = sayi * sayi;
-                MessageBox.Show(karesi.ToString());
+                kulAdi = txtKulAdi.Text.ToString();
+                sifre = long.Parse(txtSifre.Text.ToString());
+                MessageBox.Show("Giriş Başarılı.Hoşgeldiniz " +kulAdi);
             }
             catch (Exception)
             {
-                MessageBox.Show("Lütfen sayı giriniz.");
+                MessageBox.Show("Şifreniz Sadece Sayılardan Oluşmalıdır.Tekrar Deneyiniz.");
+                txtSifre.Text = "";
             }
             finally
             {
-                MessageBox.Show("Program Kapatılıyor haberiniz olsun, altında kalmayın");
             }
+
+
         }
     }
 }
