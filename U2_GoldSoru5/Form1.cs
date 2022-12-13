@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace U2_GoldSoru4
+namespace U2_GoldSoru5
 {
     public partial class Form1 : Form
     {
@@ -36,11 +36,15 @@ namespace U2_GoldSoru4
                     {
                         if (i % 2 == 0) //çift sayı ise
                         {
+                            listBox1.Items.Add(i);
+                        }
+                        else if (i % 3 == 0)
+                        {
                             listBox2.Items.Add(i);
                         }
                         else
                         {
-                            listBox1.Items.Add(i);
+                            listBox3.Items.Add(i);
                         }
                     }
                 }
@@ -49,7 +53,6 @@ namespace U2_GoldSoru4
             {
                 MessageBox.Show("Lütfen sayı giriniz.");
             }
-            
         }
     }
 }

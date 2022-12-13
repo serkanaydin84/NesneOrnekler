@@ -19,9 +19,9 @@ namespace U2_GoldSoru3
 
         private void rbMat_CheckedChanged(object sender, EventArgs e)
         {
-            txtNot1.Text = "";
-            txtNot2.Text = "";
-            txtNot3.Text = "";
+            txtNot1.Clear();
+            txtNot2.Clear();
+            txtNot3.Clear();
             label4.Text = "Matematik ortalaması : ";
         }
 
