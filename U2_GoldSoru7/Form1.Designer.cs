@@ -117,7 +117,7 @@ namespace U2_GoldSoru7
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(401, 307);
+            this.ClientSize = new System.Drawing.Size(377, 307);
             this.Controls.Add(this.btnYenile);
             this.Controls.Add(this.lblKucuk);
             this.Controls.Add(this.lblBuyuk);

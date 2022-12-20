@@ -20,11 +20,9 @@ namespace U2_GoldSoru7
         private void Form1_Load(object sender, EventArgs e)
         {
             Random random = new Random();
-            int sayi;
             for (int i = 1; i <= 20; i++)
             {
-                sayi = random.Next(1, 100);
-                listBox1.Items.Add(sayi);
+                listBox1.Items.Add(random.Next(1, 100));
             }
         }
 
@@ -39,7 +37,6 @@ namespace U2_GoldSoru7
             for (int i = 0; i < listBox1.Items.Count; i++)
             {
                 sayi = Convert.ToInt32(listBox1.Items[i]);
-
                 if (buyuk < sayi)
                 {
                     buyuk = sayi;
@@ -61,11 +58,9 @@ namespace U2_GoldSoru7
         {
             listBox1.Items.Clear();
             Random random = new Random();
-            int sayi;
             for (int i = 1; i <= 20; i++)
             {
-                sayi = random.Next(1, 100);
-                listBox1.Items.Add(sayi);
+                listBox1.Items.Add(random.Next(1, 100));
             }
         }
     }

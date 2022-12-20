@@ -37,6 +37,11 @@ namespace U2_GoldSoru10
             this.btnEslesme = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.listBox4 = new System.Windows.Forms.ListBox();
+            this.listBox5 = new System.Windows.Forms.ListBox();
+            this.btnYenile = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBox1
@@ -95,7 +100,7 @@ namespace U2_GoldSoru10
             this.btnEslesme.Name = "btnEslesme";
             this.btnEslesme.Size = new System.Drawing.Size(162, 53);
             this.btnEslesme.TabIndex = 5;
-            this.btnEslesme.Text = "Eşleşme";
+            this.btnEslesme.Text = "Eşleştir";
             this.btnEslesme.UseVisualStyleBackColor = true;
             this.btnEslesme.Click += new System.EventHandler(this.btnEslesme_Click);
             // 
@@ -119,12 +124,68 @@ namespace U2_GoldSoru10
             this.label2.TabIndex = 8;
             this.label2.Text = "B Grubu";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(703, 15);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(64, 16);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "D Grubu";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(579, 15);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(63, 16);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "C Grubu";
+            // 
+            // listBox4
+            // 
+            this.listBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.listBox4.FormattingEnabled = true;
+            this.listBox4.ItemHeight = 16;
+            this.listBox4.Location = new System.Drawing.Point(684, 38);
+            this.listBox4.Name = "listBox4";
+            this.listBox4.Size = new System.Drawing.Size(120, 276);
+            this.listBox4.TabIndex = 10;
+            // 
+            // listBox5
+            // 
+            this.listBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.listBox5.FormattingEnabled = true;
+            this.listBox5.ItemHeight = 16;
+            this.listBox5.Location = new System.Drawing.Point(558, 38);
+            this.listBox5.Name = "listBox5";
+            this.listBox5.Size = new System.Drawing.Size(120, 276);
+            this.listBox5.TabIndex = 9;
+            // 
+            // btnYenile
+            // 
+            this.btnYenile.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnYenile.ForeColor = System.Drawing.Color.Maroon;
+            this.btnYenile.Location = new System.Drawing.Point(138, 176);
+            this.btnYenile.Name = "btnYenile";
+            this.btnYenile.Size = new System.Drawing.Size(162, 50);
+            this.btnYenile.TabIndex = 13;
+            this.btnYenile.Text = "Kura Çekimini Tekrarla";
+            this.btnYenile.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(565, 325);
+            this.ClientSize = new System.Drawing.Size(815, 325);
+            this.Controls.Add(this.btnYenile);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.listBox4);
+            this.Controls.Add(this.listBox5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listBox3);
@@ -134,7 +195,7 @@ namespace U2_GoldSoru10
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.listBox1);
             this.Name = "Form1";
-            this.Text = "Gold Soru10 / Kura Çekimi";
+            this.Text = "Gold Soru10 / Dünya Kupası Kura Çekimi";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,6 +211,11 @@ namespace U2_GoldSoru10
         private System.Windows.Forms.Button btnEslesme;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ListBox listBox4;
+        private System.Windows.Forms.ListBox listBox5;
+        private System.Windows.Forms.Button btnYenile;
     }
 }
 

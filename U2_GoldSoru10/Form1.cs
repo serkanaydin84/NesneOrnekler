@@ -34,14 +34,24 @@ namespace U2_GoldSoru10
             for (int i = 1; i <= kisiSayisi; i++)
             {
                 int tutulan = random.Next(0, listBox1.Items.Count);
-                if (i % 2 == 0)
+                if (i % 4 == 0)
                 {
                     listBox2.Items.Add(listBox1.Items[tutulan]);
                     listBox1.Items.RemoveAt(tutulan);
                 }
-                else
+                else if (i % 4 == 1)
                 {
                     listBox3.Items.Add(listBox1.Items[tutulan]);
+                    listBox1.Items.RemoveAt(tutulan);
+                }
+                else if (i % 4 == 2)
+                {
+                    listBox4.Items.Add(listBox1.Items[tutulan]);
+                    listBox1.Items.RemoveAt(tutulan);
+                }
+                else
+                {
+                    listBox5.Items.Add(listBox1.Items[tutulan]);
                     listBox1.Items.RemoveAt(tutulan);
                 }
             }
