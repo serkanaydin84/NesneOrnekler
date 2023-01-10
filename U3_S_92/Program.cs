@@ -10,12 +10,14 @@ namespace U3_S_92
     {
         int yas;
         string ad;
+
         public Kisi()
         {
             yas = 40;
             ad = "Serkan";
             Console.WriteLine("Yapıcı metod ÇALIŞTI");
         }
+
 
         public int Yas
         {
